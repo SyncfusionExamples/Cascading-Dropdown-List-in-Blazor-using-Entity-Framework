@@ -5,7 +5,7 @@ Cascading Dropdown List in Blazor using Entity Framework, The cascading Dropdown
 Make sure that you have the compatible versions of Visual Studio Code and .NET Core SDK 3.1.2 in your machine before starting to work on this project.
 
 ## How to run this application?
-To run this application, you need to first clone the `getting-started-with-blazor-dropdown-list` repository and then open it in Visual Studio Code. 
+To run this application, you need to first clone the `Cascading-Dropdown-List-in-Blazor-using-Entity-Framework` repository and then open the project or solution file in Visual Studio 2019. 
 
 * Need to change the Database connection string in Shared/DataAccess/DataContext.cs
 
@@ -14,10 +14,5 @@ optionsBuilder.UseSqlServer(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilenam
 
 ```
 
-* Now, open the `Integrated Terminal` in VS Code and run the following command to build and run this project.
+* Now, run the run the project Visual Studio and able to get the output in Browser.
 
-```
-dotnet watch run
-```
-
-Navigate to `http://localhost:5000/` or `http://localhost:5001/` in the browser to view the output.
