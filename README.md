@@ -1,18 +1,16 @@
-# Cascading-Dropdown-List-in-Blazor-using-Entity-Framework
+# Cascading Blazor Dropdown List in using Entity Framework
+
 Cascading Dropdown List in Blazor using Entity Framework, The cascading Dropdown List is a series of Dropdown List, where the value of one Dropdown List depends upon another’s value.
 
-## Project pre-requisites
-Make sure that you have the compatible versions of Visual Studio Code and .NET Core SDK 3.1.2 in your machine before starting to work on this project.
+## Prerequisites
 
-## How to run this application?
-To run this application, you need to first clone the `Cascading-Dropdown-List-in-Blazor-using-Entity-Framework` repository and then open the project or solution file in Visual Studio 2019. 
+* Visual Studio 2022
 
-* Need to change the Database connection string in Shared/DataAccess/DataContext.cs
+## How to run the project
 
-```
-optionsBuilder.UseSqlServer(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\DropDownList\EFDropDown\Shared\App_Data\NORTHWND.MDF;Integrated Security=True;Connect Timeout=30");
+* Checkout this project to a location in your disk.
+* Open the solution file using the Visual Studio 2022.
+* Restore the NuGet packages by rebuilding the solution.
+* Run the project.
 
-```
-
-* Now, run the run the project Visual Studio and able to get the output in Browser.
-
+N> NOTE: Ensure to modify the path of NORTHWIND.MDF in DataContext.cs based on your local path, before running the sample.

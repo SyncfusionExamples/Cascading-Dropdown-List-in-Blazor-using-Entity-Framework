@@ -1,7 +1,7 @@
 ﻿@page "/"
 @using Syncfusion.Blazor.Data
 @using Syncfusion.Blazor.DropDowns
-@using EFDropDown.Shared.Models
+@using DropDownListWithEF.Shared.Models
 
 
 <div class="row">
@@ -16,7 +16,7 @@
     <div class="col-md-4">
         <SfDropDownList TValue="int?" TItem="Region" Placeholder=" -- Select a Region --">
             <SfDataManager Url="api/Region/GetRegion" Adaptor="Adaptors.WebApiAdaptor" CrossDomain="true"></SfDataManager>
-            <DropDownListEvents TValue="string" ValueChange="OnRegionChange"></DropDownListEvents>
+            <DropDownListEvents TValue="int?" TItem="Region" ValueChange="OnRegionChange"></DropDownListEvents>
             <DropDownListFieldSettings Text="RegionDescription" Value="RegionID"></DropDownListFieldSettings>
         </SfDropDownList>
     </div>
@@ -33,7 +33,7 @@
     public string TerritoryURL { get; set; }
     public string TerritoryValue { get; set; }
 
-    public void OnRegionChange(ChangeEventArgs<string> args)
+    public void OnRegionChange(ChangeEventArgs<int?, Region> args)
     {
         this.TerritoryQuery = new Query().Where(new WhereFilter() { Field = "RegionID", Operator = "equal", value = args.Value, IgnoreCase = false, IgnoreAccent = false });
         TerritoryURL = "api/Region/" + args.Value;

@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using EFDropDown.Shared.Models;
+using DropDownListWithEF.Shared.Models;
 
-namespace EFDropDown.Shared.DataAccess
+namespace DropDownListWithEF.Shared.DataAccess
 {
     public class DataContext : DbContext
     {
@@ -17,7 +17,7 @@ namespace EFDropDown.Shared.DataAccess
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\DropDownList\EFDropDown\Shared\App_Data\NORTHWND.MDF;Integrated Security=True;Connect Timeout=30");
+                optionsBuilder.UseSqlServer(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\GitHub\SyncfusionExamples\DropDownList\dropdown1\DropDownListWithEF\Shared\App_Data\NORTHWND.MDF;Integrated Security=True;Connect Timeout=30");
             }
         }
     }
