@@ -1,10 +1,10 @@
-﻿using EFDropDown.Shared.Models;
+﻿using DropDownListWithEF.Shared.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EFDropDown.Shared.DataAccess
+namespace DropDownListWithEF.Shared.DataAccess
 {
     public class DataAccessLayer
     {

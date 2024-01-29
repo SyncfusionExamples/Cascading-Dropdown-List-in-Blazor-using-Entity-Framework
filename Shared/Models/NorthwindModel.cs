@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace EFDropDown.Shared.Models
+namespace DropDownListWithEF.Shared.Models
 {
     public class Region
     {
